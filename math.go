@@ -1,12 +1,12 @@
 package main
+
 import "fmt"
 
-
-func main(){
+func main() {
 	println("Hello World!")
-	fmt.Println(Soma(1, 2))
+	fmt.Println(soma(1, 2))
 }
 
-func Soma(a int, b int) int {
+func soma(a int, b int) int {
 	return a + b
 }
