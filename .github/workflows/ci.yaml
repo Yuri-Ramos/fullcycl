@@ -17,6 +17,6 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go-version }}
-      - run: echo ${{ secrets.DOCKERHUB.USERNAME }}
+      - run: echo "DOCKERHUB USERNAME: ${{ secrets.DOCKERHUB.USERNAME }}"
       - run: go test
       - run: go run math.go
