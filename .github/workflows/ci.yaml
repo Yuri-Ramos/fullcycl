@@ -1,7 +1,7 @@
 name: ci-golang-workflow
 
 on: 
-  pull
+  pull:
     branches:
       - feacture-secrets
 
