@@ -35,7 +35,9 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: user/app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
+
+
       # - name: Login to DockerHub
       #   uses: docker/login-action@v2
       #   with:
